@@ -1,0 +1,38 @@
+{
+    "name" : "subdeps",
+    "version" : "0.0.0",
+    "description" : "trace the dependency graph of a javascript file",
+    "main" : "index.js",
+    "directories" : {
+        "lib" : ".",
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {
+        "resolve" : "0.1.x",
+        "detective" : "0.0.x"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+    "devDependencies" : {
+        "tap" : "0.0.x"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/substack/node-subdeps.git"
+    },
+    "keywords" : [
+        "dependencies",
+        "graph",
+        "modules",
+        "require"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT/X11",
+    "engine" : { "node" : ">=0.4" }
+}
