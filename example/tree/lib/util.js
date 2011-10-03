@@ -1,0 +1,1 @@
+exports.sin = Math.sin;
