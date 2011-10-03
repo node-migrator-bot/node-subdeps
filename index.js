@@ -22,9 +22,10 @@ exports.sync = function (filename, opts) {
     (function walk (file) {
         if (walked[file]) return;
         walked[file] = true;
-        var dirname = path.dirname(file);
         
+        var dirname = path.dirname(file);
         var src = opts.readFileSync(file);
+        
         detective(src).forEach(function (dep) {
             opts.basedir = dirname;
             var resolved = resolve.sync(dep, opts);
