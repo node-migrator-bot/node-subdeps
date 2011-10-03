@@ -10,7 +10,6 @@ test('synchronous tree', function (t) {
         __dirname + '/tree/c.js',
         __dirname + '/tree/lib/d.js',
         __dirname + '/tree/node_modules/e/index.js',
-        __dirname + '/tree/node_modules/e/index.js',
         __dirname + '/tree/node_modules/f/beep.js'
         
     ].sort());
