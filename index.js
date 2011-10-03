@@ -21,6 +21,10 @@ exports.sync = function (filename, opts) {
     var walked = {};
     (function walk (file) {
         if (walked[file]) return;
+        if (resolve.isCore(file)) {
+            if (opts.core) walked[file] = true;
+            return;
+        }
         walked[file] = true;
         
         var dirname = path.dirname(file);
