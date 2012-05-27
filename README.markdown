@@ -85,6 +85,10 @@ With [npm](http://npmjs.org) do:
 
     npm install subdeps
 
+and for the CLI tool do:
+
+    npm install -g subdeps
+
 licence
 =======
 

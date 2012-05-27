@@ -28,7 +28,8 @@ exports.sync = function (filename, opts) {
         walked[file] = true;
         
         var dirname = path.dirname(file);
-        var src = opts.readFileSync(file);
+        var src = opts.readFileSync(file)
+            .toString().replace(/^#![^\n]+/);
         
         detective(src).forEach(function (dep) {
             opts.basedir = dirname;
