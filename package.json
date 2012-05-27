@@ -1,6 +1,6 @@
 {
     "name" : "subdeps",
-    "version" : "0.0.0",
+    "version" : "0.0.1",
     "description" : "trace the dependency graph of a javascript file",
     "main" : "index.js",
     "bin" : {
@@ -12,8 +12,8 @@
         "test" : "test"
     },
     "dependencies" : {
-        "resolve" : "0.1.x",
-        "detective" : "0.0.x"
+        "resolve" : "~0.2.2",
+        "detective" : "~0.1.1"
     },
     "scripts" : {
         "test" : "tap test/*.js"
