@@ -5,6 +5,8 @@ Trace the dependency graph of a javascript file using
 [detective](https://github.com/substack/node-detective) and
 [resolve](https://github.com/substack/node-resolve).
 
+[![build status](https://secure.travis-ci.org/substack/node-subdeps.png)](http://travis-ci.org/substack/node-subdeps)
+
 examples
 ========
 
